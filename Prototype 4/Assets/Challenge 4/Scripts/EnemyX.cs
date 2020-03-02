@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyX : MonoBehaviour
 {
-    public float speed = 5.0f;
+    public float speed;
     private Rigidbody enemyRb;
     private GameObject playerGoal;
 
@@ -12,7 +12,6 @@ public class EnemyX : MonoBehaviour
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
-        playerGoal = GameObject.Find("PlayerGoal");
     }
 
     // Update is called once per frame
